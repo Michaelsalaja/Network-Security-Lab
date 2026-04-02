@@ -6,7 +6,7 @@ This lab project is meant to help understand how to configure a standard Access 
 
 ## Note
 
-* Standard ACLs can only be applied to IP traffic. Only Extended ACLs can be used to filter other types of traffic
+* Standard ACLs can only be applied to IP traffic. Only Extended ACLs can be used to filter other types of traffics.
 * Misconfiguring ACLs rule could lead to some real head-scratching moments when you are troubleshooting network issues. You might think you have blocked a host or IP, but something is still sneaking through because the ACLs is applied wrongly and unintendedly.
 
 ## Instructions
