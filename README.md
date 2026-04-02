@@ -6,8 +6,8 @@ This lab project is meant to help understand how to configure a standard Access 
 
 ## Note
 
-* ![bullet point](image) Standard ACLs can only be applied to IP traffic. Only Extended ACLs can be used to filter other types of traffic
-* ![bullet point](image) Misconfiguring ACLs rule could lead to some real head-scratching moments when you are troubleshooting network issues. You might think you have blocked a host or IP, but something is still sneaking through because the ACLs is applied wrongly and unintendedly.
+* Standard ACLs can only be applied to IP traffic. Only Extended ACLs can be used to filter other types of traffic
+* Misconfiguring ACLs rule could lead to some real head-scratching moments when you are troubleshooting network issues. You might think you have blocked a host or IP, but something is still sneaking through because the ACLs is applied wrongly and unintendedly.
 
 ## Instructions
 
@@ -21,13 +21,12 @@ In the PuTTY Configuration window, I typed Host Name (or IP address) as <mark>19
 
 ### Step 3
 
-* ![bullet point](image) Under Connection type, “Other” radio button is selected and clicked
-* ![bullet point](image) A command line prompt in the terminal window will pop up
-* ![bullet point](image) Press “Enter”
+* Under Connection type, “Other” radio button is selected and clicked
+* A command line prompt in the terminal window will pop up
+* Press “Enter”
 
-![PuTTY Configuration window showing basic options for a session, including Host Name 192.168.116.128 and Port 5011.](page_2_image_1_v2.jpg)
-
-*PuTTy Terminal Window*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%201_PuTTy%20Terminal%20Window.png)
+*Figure 1.1 PuTTy Terminal Window*
 
 # Step 4
 
@@ -37,16 +36,8 @@ In the PuTTY Configuration window, I typed Host Name (or IP address) as <mark>19
 
 * It is observed that PC3 is able to ping the 192.168.1.100 host
 
-![A screenshot of a Linux desktop environment showing a PuTTY terminal window with ping results. The terminal title is "192.168.116.128 - PuTTY". Inside the terminal, it shows:
-ping 192.168.1.100
-192.168.1.100 icmp_seq=1 timeout
-64 bytes from 192.168.1.100 icmp_seq=2 ttl=62 time=41.937 ms
-64 bytes from 192.168.1.100 icmp_seq=3 ttl=62 time=38.606 ms
-64 bytes from 192.168.1.100 icmp_seq=4 ttl=62 time=26.141 ms
-64 bytes from 192.168.1.100 icmp_seq=5 ttl=62 time=38.622 ms
-PC3>](page_3_image_1_v2.jpg)
-
-*PC3 Terminal Window*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%202_PC3%20Terminal%20Window.png)
+*Figure 1.2. PC3 Terminal Window*
 
 # Step 5
 
@@ -54,23 +45,20 @@ PC3>](page_3_image_1_v2.jpg)
 
 * On the left side bar, PuTTy is right clicked to open a new Window
 
-![A screenshot of a Linux desktop environment (Ubuntu) showing the top bar with "Activities" and the date "Apr 2 03:59", a sidebar with application icons, and a context menu for the PuTTY application with options: All Windows, New Window, Remove from Favorites, and Quit. The background is a purple jellyfish wallpaper.](page_4_image_1_v2.jpg)
-
-*PuTTY Sidebar*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%203_PuTTy%20Sidebar.png)
+*Figure 1.3. PuTTY Sidebar*
 
 A new window emerges
 
-![PuTTY Configuration Window showing the session settings on a Linux desktop.](page_5_image_1_v2.jpg)
-
-*PuTTy Configuration Window*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%204_PuTTy%20Configuration%20Window.png)
+*Figure 1.4. PuTTy Configuration Window*
 
 # Step 6
 
 In the PuTTY Configuration window, in the right pane, I typed Host Name (or IP address) as <mark>192.168.116.128</mark> and Port as <mark>5033</mark>.
 
-![Overview of Putty Configuration Info](page_6_image_1_v2.jpg)
-
-*Overview of Putty Configuration Info*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%205_Overview%20of%20Putty%20Configuration%20Info.png)
+*Figure 1.5. Overview of Putty Configuration Info*
 
 * Under Connection type, “Other” radio button is selected and clicked
 
@@ -80,9 +68,8 @@ In the PuTTY Configuration window, in the right pane, I typed Host Name (or IP a
 
 * R8 Terminal will emerge
 
-![Display of R8 Terminal Window](page_7_image_1_v2.jpg)
-
-*Display of R8 Terminal Window*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%206_Display%20of%20R8%20Terminal%20Window.png)
+*Figure 1.6. Display of R8 Terminal Window*
 
 # Step 7
 
@@ -92,9 +79,8 @@ In the R8 terminal window, I proceeded as follows:
 
 <span style="color: purple">Conf t</span>
 
-![Screenshot of a PuTTY SSH Client terminal showing the output of the 'conf t' command on router R8.](page_8_image_1_v2.jpg)
-
-*Output of conf t command*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%207_Output%20of%20conf%20t%20command.png)
+*Figure 2.1. Output of conf t command*
 
 # Step 8
 
@@ -106,23 +92,33 @@ In the R8 terminal window, I proceeded as follows:
 * IP access-group 10 out
 * end
 
-![Screenshot of a PuTTY SSH Client terminal window showing Cisco IOS configuration commands. The terminal text shows:
-R8 con0 is now available
-Press RETURN to get started.
-R8#
-R8#
-R8#conf t
-Enter configuration commands, one per line. End with CNTL/Z.
-R8(config)#access-list 10 deny host 192.168.2.101
-R8(config)#access-list 10 permit any
-R8(config)#interface e0/1
-R8(config-if)#IP access-group 10 out
-R8(config-if)#end
-R8#
-*Mar 1 03:59:38.487: %SYS-5-CONFIG_I: Configured from console by console
-R8#](page_9_image_1_v2.jpg)
+# Terminal Window
+*R8#
 
-*Output of 5 Command Executions in Configuration Mode*
+*R8#
+
+*R8#conf t
+
+*Enter configuration commands, one per line. End with CNTL/Z.
+
+*R8(config)#access-list 10 deny host 192.168.2.101
+
+*R8(config)#access-list 10 permit any
+
+*R8(config)#interface e0/1
+
+*R8(config-if)#IP access-group 10 out
+
+*R8(config-if)#end
+
+*R8#
+
+*Mar 1 03:59:38.487: %SYS-5-CONFIG_I: Configured from console by console
+
+*R8#](page_9_image_1_v2.jpg)
+
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%208_Output%20of%205%20Command%20Executions%20in%20Configuration%20Mode.png)
+*Figure 2.2 Output of 5 Command Executions in Configuration Mode*
 
 * The following command was executed in enable mode to save router settings:
 
@@ -132,13 +128,11 @@ R8#](page_9_image_1_v2.jpg)
 
 * Configurations will then be built and “{OK}” will emerge in the terminal
 
-![Screenshot of a PuTTY SSH Client terminal window showing Cisco IOS configuration commands. The terminal displays the configuration of an access list and an interface, followed by a copy running-config startup-config command. A red box highlights the final command and the prompt "Destination filename [startup-config]?".](page_10_image_1_v2.jpg)
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%209-Display%20of%20Destination%20File%20Name%20Request.png)
+*Figure 2.3. Display of Destination File Name Request*
 
-*Display of Destination File Name Request*
-
-![Screenshot of a PuTTY SSH Client terminal showing Cisco IOS configuration commands for an access list and saving the running configuration to startup configuration.](page_11_image_1_v2.jpg)
-
-*Output of Destination File Name Response*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%2010_Output%20of%20Destination%20File%20Name%20Response.png)
+*Figure 2.4. Output of Destination File Name Response*
 
 # Step 9
 
@@ -148,9 +142,8 @@ R8#](page_9_image_1_v2.jpg)
 
 * Access list will be displayed
 
-![Screenshot of a PuTTY SSH Client terminal window showing Cisco IOS configuration commands for an access list on router R8.](page_12_image_1_v2.jpg)
-
-Overview of Access Lists 10
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%2011_Overview%20of%20Access%20List%2010%20%20%20%20%20.png)
+*Figure 2.5. Overview of Access Lists 10*
 
 # Step 11
 
@@ -160,9 +153,8 @@ Minimized the R8 terminal window
 
 On the left sidebar, I clicked the PuTTY icon and clicked on the 192.168.116.128 terminal to restore the PC3 terminal window.
 
-![Screenshot of a PuTTY SSH Client session on a Linux desktop showing terminal commands on router R8. The terminal shows a failed copy command due to typos, a successful `copy running-config startup-config`, and the output of `show access-lists` displaying Standard IP access list 10 with '10 deny 192.168.2.101' and '20 permit any'.](page_13_image_1_v2.jpg)
-
-*PuTTY Configuration Windows PC3 and R8*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%2012_PuTTy%20Configuration%20Windows%20PC3%20and%20R8.png)
+*Figure 2.6. PuTTY Configuration Windows PC3 and R8*
 
 # Step 11
 
@@ -172,9 +164,8 @@ On the left sidebar, I clicked the PuTTY icon and clicked on the 192.168.116.128
 
 * It was clearly observed that PC3 was not able to ping the 192.168.1.100 host, and communication is prohibited.
 
-![Output of Ping command showing successful pings followed by "Communication administratively prohibited" messages from 192.168.3.1.](page_14_image_1_v2.jpg)
-
-*Output of Ping command*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%2013_Output%20of%20Ping%20command.png)
+*Figure 3.1. Output of Ping command*
 
 # Step 12
 
@@ -182,9 +173,8 @@ I closed the PC3 and R8 terminal windows.
 
 At the PuTTY Exit Confirmation prompts, I clicked Yes.
 
-![Display of PuTTY SSH Client showing ping results and an exit confirmation dialog box. The terminal shows ICMP packets being "Communication administratively prohibited" by 192.168.3.1.](page_15_image_1_v2.jpg)
-
-*Display of PuTTy Exit Confirmation*
+![image alt](https://github.com/Michaelsalaja/Network-Security-Lab/blob/fdc3a1b2896f12114537b1117cfcb65a2de1b491/Figure%2014_Display%20of%20PuTTy%20Exit%20Confirmation.png)
+*Figure 3.2. Display of PuTTy Exit Confirmation*
 
 # Conclusion
 
